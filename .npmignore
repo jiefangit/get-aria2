@@ -3,3 +3,4 @@
 bin/aria2c
 docs
 node_modules
+.travis.yml
