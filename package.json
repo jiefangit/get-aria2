@@ -20,9 +20,12 @@
   "author": "Zachary Boyd <zachary@zacharyboyd.nyc>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/znetstar/aria2c-binary/issues"
+    "url": "https://github.com/znetstar/get-aria2/issues"
   },
   "homepage": "https://github.com/znetstar/get-aria2",
+  "keywords": [
+    "aria2"
+  ],
   "dependencies": {
     "bluebird": "^3.5.2",
     "chmod": "^0.2.1",
