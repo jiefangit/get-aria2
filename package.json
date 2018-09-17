@@ -4,7 +4,7 @@
   "description": "This package downloads the latest version of aria2c for Windows, Mac and Linux",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha test/test.js",
+    "test": "mocha test/index.js",
     "postinstall": "bin/get-aria2 bin/aria2c -c -e",
     "docs": "grunt docs"
   },
@@ -14,17 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/znetstar/aria2c-binary.git"
+    "url": "git+https://github.com/znetstar/get-aria2.git"
   },
   "author": "Zachary Boyd <zachary@zacharyboyd.nyc>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/znetstar/aria2c-binary/issues"
   },
-  "homepage": "https://github.com/znetstar/aria2c-binary",
+  "homepage": "https://github.com/znetstar/get-aria2",
   "dependencies": {
     "bluebird": "^3.5.2",
     "chmod": "^0.2.1",
+    "del": "^3.0.0",
     "minimist": "^1.2.0",
     "proxy-agent": "^3.0.3",
     "request": "^2.88.0",
