@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test/index.js",
-    "postinstall": "bin/get-aria2 bin/aria2c -c -e",
+    "postinstall": "bin/get-aria2 bin/aria2c -c",
     "docs": "grunt docs"
   },
   "bin": {
