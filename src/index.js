@@ -45,7 +45,7 @@ const PATH_REGEX = /\/bin\/aria2c|\/aria2c\.exe|\/aria2c$/;
  * @type {string}
  * @private
  */
-const ASSET_NAME_REGEX = /(?<=aria2-)((?:\d+\.)?(?:\d+\.)?(?:\*|\d+))-.?(android|osx-darwin|win|linux-gnu)+?(?:-(arm|64bit|32bit))?/;
+const ASSET_NAME_REGEX = /((?:\d+\.)?(?:\d+\.)?(?:\*|\d+))-.?(android|osx-darwin|win|linux-gnu)+?(?:-(arm|64bit|32bit))?/;
 
 /**
  * Regex to match supproted archives.
