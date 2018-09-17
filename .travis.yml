@@ -4,3 +4,11 @@ node_js:
 cache:
   directories:
   - node_modules
+deploy:
+  provider: npm
+  email: zachary@zacharyboyd.nyc
+  api_key:
+    secure: lcreKGx7QXXiiZNsTW/OaAfjuYcqvIlqbczT5ogpn5SZgMGQumc+fVxXAd4nc17NmyysjM15S7lA8+quxwNqPuoMpHkLXfeg/ZLiwWwlGvysxwG43fmLNII18NWVjbskdiAZtg0ICPQIl6fR4oCA2LiuAjwGSRrJ2qVP22Cacg3hJ28j9xP5SdwjOEPpCnsyNN6UpofmrDyl5YQkeJIbHoMp9LcY3+drod0k/v/MXqr2mpO7I5YgMsDkV721oDCeDMaIJ7sY/sdNrN4oN3m5+Xyyw3p9D99jDpKR2puswO7NI8kSD2iIa77bczIwtIOkvgMKjvY3z9vbm+lZMBKAgNOauoggypayhdJ8A44bUzHOWamzNHK7G2lih2SrPlE7/VgkbwaqRuAbDSRpgUCQ4RYygQEXadJIAwXueffllIfokExQlqYpP2hSB7WmxyTmakAtMhnAtkCP0yxh5e8wd2k6MpaUbQSv9wlD13yBmjw2yakgDOkDBx6yONNK5aFhvMfQuufyW39TonJvPlx6q3CFtBQRicMCIB2TY9jA6eiuL1e+Fx/5dxjbJVmQKPv8yk0OQuL3naiEBRl7ktbnInXcoiXMGttnugtflQTqXM8Pu/5Jv1P2EevvP/8n3fpyLPUvHkmH1PNlAqU06S70Gtbtnyb3yZGAOPcd4lYtRk8=
+  on:
+    tags: true
+    repo: znetstar/get-aria2
