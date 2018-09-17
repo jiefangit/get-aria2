@@ -34,6 +34,8 @@ Example: `get-aria2 win-32-aria2 -p win32 -a x32 -e`
 
 Will download `aria2c` to `./win-32-aria2.exe`.
 
+If no destination is provided will write to stdout.
+
 ## Platform/Architecture
 
 * "darwin" (mac) - only supports "x64".
