@@ -1,0 +1,44 @@
+{
+  "name": "get-aria2",
+  "version": "1.0.0",
+  "description": "This package downloads the latest version of aria2c for Windows, Mac and Linux",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test/test.js",
+    "postinstall": "bin/get-aria2 bin/aria2c -c -e",
+    "docs": "grunt docs"
+  },
+  "bin": {
+    "get-aria2": "bin/get-aria2",
+    "aria2c": "bin/aria2c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znetstar/aria2c-binary.git"
+  },
+  "author": "Zachary Boyd <zachary@zacharyboyd.nyc>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/znetstar/aria2c-binary/issues"
+  },
+  "homepage": "https://github.com/znetstar/aria2c-binary",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "chmod": "^0.2.1",
+    "minimist": "^1.2.0",
+    "proxy-agent": "^3.0.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "tar-stream": "^1.6.1",
+    "unbzip2-stream": "^1.2.5",
+    "unzip": "^0.1.11"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "docdash": "^1.0.0",
+    "grunt": "^1.0.3",
+    "grunt-jsdoc": "^2.3.0",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0"
+  }
+}
