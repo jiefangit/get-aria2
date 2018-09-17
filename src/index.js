@@ -9,7 +9,7 @@ const Promise = require('bluebird');
 const ProxyAgent = require('proxy-agent');
 const tar = require('tar-stream');
 const bz2 = require('unbzip2-stream');
-const unzip = require('unzip');
+const unzip = require('node-unzip-2');
 
 /**
  * Version of the GitHub API to use.

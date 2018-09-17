@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.3] - 2018-09-17
+
+### Changed
+- Fixes a bug caused by the "unzip" module. Replaces "unzip" with "node-unzip-2".
+
 ## [1.0.2] - 2018-09-17
 
 ### Added
