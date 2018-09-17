@@ -3,7 +3,7 @@ const { platform, arch } = require('os');
 const { spawn } = require('child_process');
 const Promise = require('bluebird');
 const { assert } = require('chai');
-const { getAria2 } = require('../');
+const { getAria2, aria2cPath } = require('../');
 const path = require('path');
 const chmod = require('chmod');
 const del = require('del');
@@ -57,5 +57,12 @@ describe('getAria2(platform, arch)', function () {
         });
 
         await del(path.join(workDir, "**"), { force: true });
+    });
+});
+
+describe('aria2cPath()', function () {
+    it('should the aria2 path', function () {
+        let pathFromPackage = path.join.apply(null, [ __dirname, '..' ].concat(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8')).bin.aria2c.split('/')) );
+        assert.equal(aria2cPath(), pathFromPackage);
     });
 });

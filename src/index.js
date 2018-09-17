@@ -1,5 +1,9 @@
+'use strict';
+
 const os = require('os');
 const zlib = require('zlib');
+const fs = require('fs');
+const path = require('path');
 
 const Promise = require('bluebird');
 const ProxyAgent = require('proxy-agent');
@@ -167,6 +171,15 @@ function getAssetInfo(assetName) {
 }
 
 /**
+ * Returns the path to the aria2c binary that is automatically installed with this package.
+ * @returns {string} - The aria2c path.
+ */
+function aria2cPath() {
+    let pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "package.json"), 'utf8'));
+    return path.join.apply(null, [__dirname, ".."].concat(pkg.bin.aria2c.split('/')));
+}
+
+/**
  * This function returns a stream containing the aria2 binary for the provided platform and arch.
  * @param {string} [platform=os.platform()] - The platform to download the binary for. See {@link https://bit.ly/2QE0hbF|the node documentation} for a list of platforms.
  * @param {string} [arch=os.arch()] - The architecture to download the binary for. "x32" and "x64" are valid for Windows and Linux. "arm" is valid for Android and Linux. Only "x64" is valid for Mac.
@@ -275,6 +288,8 @@ async function getAria2(platform, arch) {
 
 /**
  * This module contains a {@link getAria2|function} which will return the latest version of aria2 as a stream.
+ * It will also return a {@link aria2cPath|function} which will return the path to aria2 automatically downloaded with this package.
+ * 
  * @module get-aria2
  */
-module.exports = { getAria2 };
+module.exports = { getAria2, aria2cPath };

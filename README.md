@@ -51,6 +51,10 @@ By default it will use your current platform and architecture.
 
 This package contains a `getAria2(platform, arch)` function which will return a `Stream` containing the binary.
 
+You can also programmatically get the path to `aria2c` by calling `aria2cPath()`.
+
+There is an API documentation which you can generate by running `npm run docs`. A copy of the documentation is [available online here](https://get-aria2.docs.zacharyboyd.nyc).
+
 ## Tests
 
 Tests are written in mocha. Run `npm test`.
