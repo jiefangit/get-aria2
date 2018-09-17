@@ -1,5 +1,10 @@
 # get-aria2
 
+[![NPM](https://nodei.co/npm/get-aria2.png)](https://nodei.co/npm/get-aria2/)
+
+[![Build Status](https://travis-ci.org/znetstar/get-aria2.svg?branch=master)](https://travis-ci.org/znetstar/get-aria2) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fznetstar%2Fget-aria2.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fznetstar%2Fget-aria2?ref=badge_shield)
+
+
 This package contains a tool that will download the latest version of aria2 from GitHub.
 
 ## NPM
