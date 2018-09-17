@@ -5,12 +5,13 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test/index.js",
-    "postinstall": "bin/get-aria2 bin/aria2c -c",
+    "preinstall": "node -e \"require('fs').writeFileSync(require('path').join('bin', 'aria2c.exe'), '');\"",
+    "postinstall": "node bin/get-aria2.js bin/aria2c.exe -c",
     "docs": "grunt docs"
   },
   "bin": {
-    "get-aria2": "bin/get-aria2",
-    "aria2c": "bin/aria2c"
+    "get-aria2": "bin/get-aria2.js",
+    "aria2c": "bin/aria2c.exe"
   },
   "repository": {
     "type": "git",

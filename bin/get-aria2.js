@@ -1,8 +1,9 @@
 #!/usr/bin/env node
+
 const fs = require('fs');
 const os = require('os');
 const minimist = require('minimist');
-const { getAria2 } = require('..');
+const { getAria2 } = require('../src');
 const chmod = require('chmod');
 
 const chmod_platforms = Object.freeze(['darwin', 'linux', 'android']);

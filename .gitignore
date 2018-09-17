@@ -2,3 +2,4 @@
 .vscode
 docs
 node_modules
+bin/aria2c.exe
