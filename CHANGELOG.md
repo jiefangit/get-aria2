@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.5] - 2018-09-18
+
+### Changed
+- Removes "proxy-agent" because of a bug. SOCKS proxys are no longer. HTTP proxies are still supported.
+
 ## [1.0.4] - 2018-09-17
 
 ## [1.0.3] - 2018-09-17

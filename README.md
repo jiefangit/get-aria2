@@ -11,7 +11,7 @@ This package contains a tool that will download the latest version of aria2 from
 
 If the package is added as a dependency in another node module (`npm install get-aria2`) it will write the `aria2c` binary to `node_modules/.bin`. If installed globally (`npm install -g get-aria2`) the binary will be added to your PATH so you can use `aria2c` on the command line.
 
-To use with a proxy set the "PROXY_URL" environment variable. Example: `PROXY_URL=http://blah-blah:2323`. Can accept anything [proxy-agent](https://bit.ly/2Qz8vSj) can.
+To use with a proxy set the "HTTP_PROXY" environment variable. Example: `HTTP_PROXY=http://blah-blah:2323`.
 
 All platforms but linux are downloaded from "aria2/aria2".
 Linux is downloaded from "q3aql/aria2-static-builds".
