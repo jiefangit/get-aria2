@@ -31,7 +31,6 @@
     "chmod": "^0.2.1",
     "minimist": "^1.2.0",
     "node-unzip-2": "git+https://github.com/glebdmitriew/node-unzip-2.git",
-    "proxy-agent": "^3.0.3",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "tar-stream": "^1.6.1",

@@ -6,7 +6,6 @@ const fs = require('fs');
 const path = require('path');
 
 const Promise = require('bluebird');
-const ProxyAgent = require('proxy-agent');
 const tar = require('tar-stream');
 const bz2 = require('unbzip2-stream');
 const unzip = require('node-unzip-2');
@@ -56,11 +55,10 @@ const ASSET_NAME_REGEX = /((?:\d+\.)?(?:\d+\.)?(?:\*|\d+))-.?(android|osx-darwin
  */
 const SUPPORTED_ARCHIVES_REGEX = /\.zip|\.tar\.gz|\.tgz|\.tar\.bz2|\.tar/;
 
-let proxyUrl = process.env.http_proxy || process.env.HTTP_PROXY || process.env.PROXY_URL;
-let agent =  proxyUrl ? new ProxyAgent(proxyUrl) : void(0);
+let proxyUrl = process.env.http_proxy || process.env.HTTP_PROXY || process.env.https_proxy || process.env.HTTPS_PROXY;
 
 let requestOptions = {
-    agent,
+    proxy: proxyUrl,
     headers: {
         'Accept': `application/vnd.github.${GITHUB_API_VERSION}+json`,
         'User-Agent': USER_AGENT
