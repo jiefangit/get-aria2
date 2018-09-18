@@ -1,6 +1,6 @@
 {
   "name": "get-aria2",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "This package downloads the latest version of aria2c for Windows, Mac, Linux and Android",
   "main": "src/index.js",
   "scripts": {
@@ -27,10 +27,10 @@
     "aria2"
   ],
   "dependencies": {
+    "@znetstar/node-unzip-2": "^0.2.7",
     "bluebird": "^3.5.2",
     "chmod": "^0.2.1",
     "minimist": "^1.2.0",
-    "node-unzip-2": "git+https://github.com/glebdmitriew/node-unzip-2.git",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "tar-stream": "^1.6.1",
