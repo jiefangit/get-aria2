@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.8] - 2018-09-19
+### Changed
+
+- Addresses [issue #1](https://github.com/znetstar/get-aria2/issues/1) fixing a bug with the line-endings on some files being set to CRLF.
+
 ## [1.0.7] - 2018-09-18
 ### Changed
 
