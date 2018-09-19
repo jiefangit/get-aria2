@@ -1,6 +1,5 @@
 .DS_Store
 .vscode
-docs
 node_modules
 .travis.yml
 bin/aria2c.exe

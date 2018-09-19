@@ -53,7 +53,7 @@ This package contains a `getAria2(platform, arch)` function which will return a 
 
 You can also programmatically get the path to `aria2c` by calling `aria2cPath()`.
 
-There is an API documentation which you can generate by running `npm run docs`. A copy of the documentation is [available online here](https://get-aria2.docs.zacharyboyd.nyc).
+Documentation is available under `docs/`. A copy of the documentation is [available online here](https://get-aria2.docs.zacharyboyd.nyc).
 
 ## Tests
 
