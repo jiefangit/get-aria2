@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.7] - 2018-09-18
+### Changed
+
+- Fixes a bug that occurs when running `npm install` and `npm test` on Windows.
+
 ## [1.0.5] - 2018-09-18
 
 ### Changed

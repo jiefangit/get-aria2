@@ -8,7 +8,7 @@ const path = require('path');
 const Promise = require('bluebird');
 const tar = require('tar-stream');
 const bz2 = require('unbzip2-stream');
-const unzip = require('node-unzip-2');
+const unzip = require('@znetstar/node-unzip-2');
 
 /**
  * Version of the GitHub API to use.

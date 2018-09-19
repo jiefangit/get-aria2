@@ -1,12 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const { platform, arch } = require('os');
 const { spawn } = require('child_process');
 const Promise = require('bluebird');
 const { assert } = require('chai');
-const { getAria2, aria2cPath } = require('../');
-const path = require('path');
 const chmod = require('chmod');
 const del = require('del');
+const { getAria2, aria2cPath } = require('../');
 Promise.promisifyAll(fs);
 
 describe('getAria2(platform, arch)', function () {
@@ -18,7 +18,7 @@ describe('getAria2(platform, arch)', function () {
         assert.ok(binaryStream, "Did not return a binary");
     
         let workDir = fs.mkdtempSync('get-aria2-tests');
-        let execPath = path.join(workDir, "aria2c");
+        let execPath = path.join(workDir, "aria2c.exe");
         let outStream = fs.createWriteStream(execPath);
         binaryStream.pipe(outStream);
         await new Promise((resolve, reject) => {
